@@ -8,5 +8,5 @@
 
 # Long Negate
 1. The short code changes the array in memory, the long code changes the array in the stack
-2. Because we did not allocate memory for the array so the compiler does it so the new array was created on the stack.
-3. By allocating memory for the array (using Malloc)  and use pointers to adjust values.
+2. Because we did not allocate memory for the array so the compiler does it so the new array was created on the stack because the array is LOCAL data.
+3. By allocating memory for the array (using Malloc) and use pointers to adjust values. OR (and much better) make the Array global
